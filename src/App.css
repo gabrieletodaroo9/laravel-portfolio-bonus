@@ -1,0 +1,89 @@
+/* RESET */
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILS */
+
+.text-first{
+    color: #545454!important;
+}
+
+.bg-first{
+    background-color: #545454!important;
+}
+.text-second{
+    color: #ece8e8!important;
+}
+
+.text-orange{
+   color: #F0801B!important;
+}
+
+.bg-second{
+    background-color: #ece8e8!important;
+}
+
+.logo-container{
+    height: 50px;
+}
+
+.active{
+    color: #F0801B!important;
+    scale: 1.1;
+}
+
+.btn-outline-orange {
+    color: #F0801B;
+    border-color: #F0801B;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-outline-orange:hover {
+    background-color: #F0801B;
+    border-color: #F0801B;
+    color: #fff;
+}
+
+.jumbo-profile {
+    min-height: 550px;
+    
+    background-image: 
+        linear-gradient(to right, 
+            #545454 40%,       
+            #585858 57%,      
+            rgba(0, 0, 0, 0) 83%
+        ), 
+        var(--bg-image);
+
+    background-position: 100% center; 
+    background-size: auto 100%; 
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.jumbo-content {
+    max-width: 50%; 
+    padding-left: 13%;
+    z-index: 2;
+}
+
+.text-deep {
+    color: white;
+    text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.btn{
+    border: 0!important;
+
+    &:hover{
+         border-radius: 10px;
+    }
+}
