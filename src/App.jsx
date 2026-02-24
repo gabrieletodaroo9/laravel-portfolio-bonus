@@ -36,7 +36,7 @@ export default function App() {
             <Route element={<DefaultLayout />}>
               <Route index element={<HomePage tod={profile} />} />
               <Route path="/projects" element={<ProjectsPage projects={projects}/>} />
-              <Route path="/projects/:id" element={<ProjectPage />} />
+              <Route path="/projects/:slug" element={<ProjectPage projects={projects} />} />
             </Route>
           </Route>
         </Routes>
