@@ -6,6 +6,7 @@ import ProjectsPage from "./pages/projectspage";
 import ProjectPage from "./pages/projectpage";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   const [profile, setProfile] = useState({});
@@ -37,6 +38,7 @@ export default function App() {
               <Route index element={<HomePage tod={profile} />} />
               <Route path="/projects" element={<ProjectsPage projects={projects}/>} />
               <Route path="/projects/:slug" element={<ProjectPage projects={projects} />} />
+              <Route path="/contact" element={<ContactPage />} />
             </Route>
           </Route>
         </Routes>
