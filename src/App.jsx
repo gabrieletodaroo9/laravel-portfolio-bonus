@@ -7,6 +7,7 @@ import ProjectPage from "./pages/projectpage";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ContactPage from "./pages/ContactPage";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function App() {
   const [profile, setProfile] = useState({});

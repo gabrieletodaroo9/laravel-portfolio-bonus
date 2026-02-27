@@ -12,7 +12,7 @@ export default function ContactPage() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8000/api/messages", formData)
+      .post("http://127.0.0.1:8000/api/messages", formData)
       .then((response) => {
         console.log("Successo:", response.data);
         alert("Messaggio inviato correttamente!");
@@ -25,17 +25,17 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="main-content container py-5">
+    <div className="main-content container py-3 py-md-5">
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6">
-          <div className="text-center mb-5">
+          <div className="text-center mb-2 mb-md-5">
             <h1 className="display-4 text-uppercase mb-2">Contattami</h1>
             <p className="text-secondary">
               Hai un progetto in mente? Parliamone.
             </p>
           </div>
 
-          <div className="bg-white p-4 p-md-5 shadow-sm rounded-4">
+          <div className="bg-white p-4 p-md-5 rounded-4">
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label className="small fw-bold text-secondary text-uppercase">
@@ -43,7 +43,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="text"
-                  className="form-control border-0 bg-light py-3"
+                  className="form-control form-control-sm mt-1  border-0 bg-light py-3"
                   placeholder="Inserisci il tuo nome"
                   value={formData.name}
                   onChange={(e) =>
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="email"
-                  className="form-control border-0 bg-light py-3"
+                  className="form-control  form-control-sm mt-1 border-0 bg-light py-3"
                   placeholder="name@example.com"
                   value={formData.email}
                   onChange={(e) =>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   Messaggio
                 </label>
                 <textarea
-                  className="form-control border-0 bg-light py-3"
+                  className="form-control  form-control-sm mt-1 border-0 bg-light py-3"
                   rows="2"
                   placeholder="Come posso aiutarti?"
                   value={formData.message}
@@ -87,7 +87,7 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="btn btn-dark w-100 py-3 fw-bold rounded-3"
+                className="btn btn-outline-orange btn-sm w-100 py-2 fw-bold rounded-1"
               >
                 Invia Messaggio
               </button>

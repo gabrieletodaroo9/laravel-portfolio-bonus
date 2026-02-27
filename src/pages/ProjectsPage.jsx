@@ -32,12 +32,12 @@ export default function ProjectsPage({ projects }) {
   }, [search, currentType, currentTech, projects]);
 
   return (
-    <div className="main-content container py-5">
-      <h1 className="display-4 fw-bold text-center mb-5">
+    <div className="main-content container py-3 py-md-5">
+      <h1 className="display-4 text-uppercase text-center pb-4 mb-3 mb-md-5">
         I miei <span className="text-orange">Progetti</span>
       </h1>
 
-      <div className="row g-4 mb-5 p-2 bg-light rounded-1 shadow-sm">
+      <div className="row g-2 g-md-4 mb-5 p-2 bg-light rounded-1 shadow-sm">
         <div className="col-md-4 my-2">
           <label className="small fw-bold text-secondary text-uppercase">
             Cerca
@@ -88,7 +88,7 @@ export default function ProjectsPage({ projects }) {
           </p>
         </div>
       ) : (
-        <div className="row g-5">
+        <div className="row g-3 g-md-5 mt-2">
           {filteredProjects.map((project) => (
             <div key={project.id} className="col-lg-6">
               <Link
